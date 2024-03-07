@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    gap: 10px;
+    margin-top: 200px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 350px;
+    height: 446px;
+    background-color: #f4f4f4; 
+}
+
+
+#output {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 40px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 64px;
+    width: 350px;
+    padding: 10px;
+}
+
+#buttons div {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    flex-grow: 1;
+}
+
+#buttons div div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    width: 64px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: white;
+}
