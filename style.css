@@ -8,11 +8,11 @@ body {
     gap: 10px;
     margin-top: 200px;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid rgb(199, 194, 194);
     border-radius: 3px;
     width: 350px;
-    height: 446px;
-    background-color: #f4f4f4; 
+    height: 434px;
+    background-color: #d8d6d6; 
 }
 
 
@@ -40,9 +40,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box; 
+    font-size: 18px;
     height: 64px;
     width: 64px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 3px;
     background-color: white;
+}
+
+.pressing {
+    border: 1px solid rgb(211, 199, 199);
+    border-radius: 3px;
 }

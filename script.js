@@ -21,6 +21,12 @@ del.addEventListener('click', () => output.textContent = output.textContent.slic
 reset.addEventListener('click', () => output.textContent = '');
 equal.addEventListener('click', () => output.textContent = calculator.calculate(output.textContent));
 
+document.querySelectorAll('#buttons div div').forEach(button => button.addEventListener('mousedown', e => e.target.classList.add('pressing')));
+document.querySelectorAll('#buttons div div').forEach(button => button.addEventListener('mouseup', e => e.target.classList.remove('pressing')));
+
+window.addEventListener('keydown', e => document.querySelector(`#buttons div div[data-key='${e.key}']`).classList.add('pressing'));
+window.addEventListener('keyup', e => document.querySelector(`#buttons div div[data-key='${e.key}']`).classList.remove('pressing'));
+
 function Calculator() {
     this.operators = {
         '+': (a, b) => a + b,
