@@ -11,22 +11,31 @@ body {
     border: 1px solid rgb(199, 194, 194);
     border-radius: 3px;
     width: 350px;
-    height: 434px;
+    height: 466px;
     background-color: #d8d6d6; 
 }
 
-
-#output {
+#display {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
     box-sizing: border-box;
-    font-size: 40px;
-    background-color: white;
     border: 1px solid black;
     border-radius: 3px;
-    height: 64px;
+    background-color: white;
+    height: 96px;
     width: 350px;
     padding: 10px;
+}
+
+#output-top {
+    text-align: end;
+    color: #afafaf;
+}
+
+#output {
+    text-align: end;
+    font-size: 45px;
 }
 
 #buttons div {
@@ -44,12 +53,17 @@ body {
     font-size: 18px;
     height: 64px;
     width: 64px;
-    /* border: 1px solid black; */
     border-radius: 3px;
     background-color: white;
+}
+
+#buttons div div:hover {
+    border: 1px solid rgb(211, 199, 199);
+    border-radius: 3px;
 }
 
 .pressing {
     border: 1px solid rgb(211, 199, 199);
     border-radius: 3px;
+    transform: scale(1.1);
 }

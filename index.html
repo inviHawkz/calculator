@@ -8,7 +8,10 @@
     </head>
     <body>
         <div id="container">
-            <div id="output"></div>
+            <div id="display">
+                <div id="output-top"></div>
+                <div id="output"></div>
+            </div>
             <div id="buttons">
                 <div>
                     <div data-key='7' class="number">7</div>
@@ -29,7 +32,7 @@
                     <div data-key='-' class="operator">-</div>
                 </div>
                 <div>
-                    <div data-key='.' class="number">.</div>
+                    <div data-key='.' id="dot">.</div>
                     <div data-key='0' class="number">0</div>
                     <div data-key='/' class="operator">/</div>
                     <div data-key='*' class="operator">*</div>
